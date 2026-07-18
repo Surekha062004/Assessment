@@ -1,0 +1,264 @@
+:host {
+  display: block;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.06);
+}
+
+/* ---------- Header card ---------- */
+.header-card {
+  overflow: hidden;
+}
+
+.avatar-placeholder {
+  width: 110px;
+  height: 110px;
+  min-width: 110px;
+  border-radius: 8px;
+  background:
+    linear-gradient(#e4e6ea, #e4e6ea) top left / 40% 2px no-repeat,
+    linear-gradient(#e4e6ea, #e4e6ea) top left / 2px 40% no-repeat,
+    linear-gradient(#e4e6ea, #e4e6ea) bottom right / 40% 2px no-repeat,
+    linear-gradient(#e4e6ea, #e4e6ea) bottom right / 2px 40% no-repeat;
+  background-color: transparent;
+}
+
+.employee-name {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #24262b;
+}
+
+.employee-team {
+  color: #8a8f98;
+  font-size: 0.95rem;
+  margin-top: 2px;
+}
+
+.employee-role {
+  color: #24262b;
+  font-weight: 500;
+}
+
+.employee-meta {
+  color: #8a8f98;
+  font-size: 0.9rem;
+}
+
+.send-message-btn {
+  color: #24262b;
+  text-decoration: none;
+  font-weight: 500;
+  border: none;
+  background: none;
+}
+.send-message-btn:hover {
+  color: #4b7bec;
+}
+
+.contact-col {
+  border-left: 1px dashed #e2e4e9;
+  padding-left: 2.5rem;
+}
+@media (max-width: 991.98px) {
+  .contact-col {
+    border-left: none;
+    padding-left: 0.75rem;
+    margin-top: 1.5rem;
+  }
+}
+
+.contact-list {
+  margin: 0;
+}
+.contact-row {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.35rem 0;
+}
+.contact-row dt {
+  min-width: 110px;
+  color: #24262b;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+.contact-row dd {
+  margin: 0;
+  color: #8a8f98;
+  font-size: 0.92rem;
+}
+.contact-row a {
+  color: #4b7bec;
+  text-decoration: none;
+}
+.contact-row a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Tabs ---------- */
+.profile-tabs {
+  border-top: 1px solid #edeef1;
+  border-bottom: none;
+  margin: 0;
+  padding-top: 0.25rem;
+}
+.profile-tabs .nav-link {
+  color: #8a8f98;
+  font-weight: 500;
+  border: none;
+  padding: 0.9rem 1rem 0.75rem 1rem;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  border-radius: 0;
+}
+.profile-tabs .nav-link.active {
+  color: #24262b;
+  border-bottom-color: #e8834a;
+}
+.admin-only {
+  color: #e8556f;
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+
+/* ---------- Info cards ---------- */
+.card-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #24262b;
+  margin-bottom: 0;
+}
+
+.icon-btn {
+  border: none;
+  background: #f4f5f7;
+  color: #8a8f98;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+}
+.icon-btn:hover {
+  background: #e8eaee;
+  color: #4b7bec;
+}
+
+.subsection-title {
+  font-weight: 600;
+  color: #24262b;
+  font-size: 0.98rem;
+}
+
+.detail-list {
+  margin: 0;
+}
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid #f2f3f5;
+}
+.detail-row:last-child {
+  border-bottom: none;
+}
+.detail-row dt {
+  color: #24262b;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.detail-row dd {
+  margin: 0;
+  color: #8a8f98;
+  font-size: 0.9rem;
+  text-align: right;
+}
+.detail-row dd.text-link {
+  color: #4b7bec;
+}
+
+.section-divider {
+  border-top: 1px solid #f2f3f5;
+  margin: 0.75rem 0;
+}
+
+/* ---------- Family table ---------- */
+.family-table {
+  margin-bottom: 0;
+}
+.family-table thead th {
+  color: #24262b;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-bottom: 1px solid #f2f3f5;
+  padding-left: 0;
+}
+.family-table tbody td {
+  color: #8a8f98;
+  font-size: 0.9rem;
+  vertical-align: middle;
+  border-bottom: none;
+  padding-left: 0;
+}
+
+/* ---------- Timeline ---------- */
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.timeline-item {
+  position: relative;
+  padding-left: 1.5rem;
+  padding-bottom: 1.75rem;
+}
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 14px;
+  bottom: -4px;
+  width: 1px;
+  background: #e2e4e9;
+}
+.timeline-item:last-child::before {
+  display: none;
+}
+.timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #d7dae0;
+}
+.timeline-title {
+  font-weight: 700;
+  color: #24262b;
+  font-size: 0.95rem;
+}
+.timeline-subtitle {
+  color: #8a8f98;
+  font-size: 0.88rem;
+  margin-top: 2px;
+}
+.timeline-period {
+  color: #b3b7bf;
+  font-size: 0.85rem;
+  margin-top: 2px;
+}
